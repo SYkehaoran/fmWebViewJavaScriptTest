@@ -15,6 +15,8 @@
 		A6C2597C212FDE2400BF699D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C2597B212FDE2400BF699D /* main.m */; };
 		A6C25986212FDE2400BF699D /* fmTestJavaScriptTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C25985212FDE2400BF699D /* fmTestJavaScriptTests.m */; };
 		A6C25991212FDE2400BF699D /* fmTestJavaScriptUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C25990212FDE2400BF699D /* fmTestJavaScriptUITests.m */; };
+		A6C259A0212FE37800BF699D /* fmWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C2599F212FE37800BF699D /* fmWebViewController.m */; };
+		A6C259A221354C4200BF699D /* ExampleApp.html in Resources */ = {isa = PBXBuildFile; fileRef = A6C259A121354C4200BF699D /* ExampleApp.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		A6C2598C212FDE2400BF699D /* fmTestJavaScriptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fmTestJavaScriptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6C25990212FDE2400BF699D /* fmTestJavaScriptUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fmTestJavaScriptUITests.m; sourceTree = "<group>"; };
 		A6C25992212FDE2400BF699D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6C2599E212FE37800BF699D /* fmWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fmWebViewController.h; sourceTree = "<group>"; };
+		A6C2599F212FE37800BF699D /* fmWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fmWebViewController.m; sourceTree = "<group>"; };
+		A6C259A121354C4200BF699D /* ExampleApp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ExampleApp.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +106,13 @@
 		A6C2596B212FDE2300BF699D /* fmTestJavaScript */ = {
 			isa = PBXGroup;
 			children = (
+				A6C259A121354C4200BF699D /* ExampleApp.html */,
 				A6C2596C212FDE2300BF699D /* AppDelegate.h */,
 				A6C2596D212FDE2300BF699D /* AppDelegate.m */,
 				A6C2596F212FDE2300BF699D /* ViewController.h */,
 				A6C25970212FDE2300BF699D /* ViewController.m */,
+				A6C2599E212FE37800BF699D /* fmWebViewController.h */,
+				A6C2599F212FE37800BF699D /* fmWebViewController.m */,
 				A6C25972212FDE2300BF699D /* Main.storyboard */,
 				A6C25975212FDE2400BF699D /* Assets.xcassets */,
 				A6C25977212FDE2400BF699D /* LaunchScreen.storyboard */,
@@ -238,6 +246,7 @@
 				A6C25979212FDE2400BF699D /* LaunchScreen.storyboard in Resources */,
 				A6C25976212FDE2400BF699D /* Assets.xcassets in Resources */,
 				A6C25974212FDE2300BF699D /* Main.storyboard in Resources */,
+				A6C259A221354C4200BF699D /* ExampleApp.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6C259A0212FE37800BF699D /* fmWebViewController.m in Sources */,
 				A6C25971212FDE2300BF699D /* ViewController.m in Sources */,
 				A6C2597C212FDE2400BF699D /* main.m in Sources */,
 				A6C2596E212FDE2300BF699D /* AppDelegate.m in Sources */,
@@ -440,7 +450,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = www.kehaoran.com.fmTestJavaScript;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kehaoran.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -457,7 +467,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = www.kehaoran.com.fmTestJavaScript;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kehaoran.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

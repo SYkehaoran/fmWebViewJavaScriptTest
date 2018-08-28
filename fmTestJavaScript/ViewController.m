@@ -7,16 +7,25 @@
 //
 
 #import "ViewController.h"
-
+#import <JavaScriptCore/JavaScriptCore.h>
+#import "fmWebViewController.h"
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
-
+- (void)btnClick {
+    fmWebViewController *webVC = [[fmWebViewController alloc] init];
+    [self.navigationController pushViewController:webVC animated:YES];
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [self.view addSubview:btn];
+    btn.frame = CGRectMake(100, 100, 100, 100);
+    [btn setBackgroundColor:[UIColor redColor]];
+    [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
 }
 
 
