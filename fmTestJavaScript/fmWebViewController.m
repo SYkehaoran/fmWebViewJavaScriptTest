@@ -10,12 +10,13 @@
 
 @interface fmWebViewController ()<UIWebViewDelegate>
 @property(nonatomic, strong) UIWebView *webView;
+
 @end
 
 @implementation fmWebViewController
 - (void)showShare:(NSString *)shareString {
 
-    NSLog(@"我是showShare 方法");
+    NSLog(@"我是showShare 方法 shareString:%@",shareString);
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,13 +26,11 @@
     self.webView.frame = self.view.bounds;
     [self.view addSubview:self.webView];
     
-    NSString* htmlPath = [[NSBundle mainBundle] pathForResource:@"ExampleApp" ofType:@"html"];
+    NSString* htmlPath = [[NSBundle mainBundle] pathForResource:@"main" ofType:@"html"];
     NSString* appHtml = [NSString stringWithContentsOfFile:htmlPath encoding:NSUTF8StringEncoding error:nil];
     NSURL *baseURL = [NSURL fileURLWithPath:htmlPath];
+  
     [self.webView loadHTMLString:appHtml baseURL:baseURL];
-//    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.URLString ] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60]];
-    
-    [self registerJavaScript];
 }
 
 - (void)registerJavaScript {
@@ -50,7 +49,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (void)webViewDidStartLoad:(UIWebView *)webView {
-    
+     [self registerJavaScript];
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {

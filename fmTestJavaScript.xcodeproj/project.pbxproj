@@ -16,7 +16,8 @@
 		A6C25986212FDE2400BF699D /* fmTestJavaScriptTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C25985212FDE2400BF699D /* fmTestJavaScriptTests.m */; };
 		A6C25991212FDE2400BF699D /* fmTestJavaScriptUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C25990212FDE2400BF699D /* fmTestJavaScriptUITests.m */; };
 		A6C259A0212FE37800BF699D /* fmWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C2599F212FE37800BF699D /* fmWebViewController.m */; };
-		A6C259A221354C4200BF699D /* ExampleApp.html in Resources */ = {isa = PBXBuildFile; fileRef = A6C259A121354C4200BF699D /* ExampleApp.html */; };
+		A6C259EB2137997400BF699D /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = A6C259EA2137997400BF699D /* main.js */; };
+		A6C259ED2137BBA200BF699D /* main.html in Resources */ = {isa = PBXBuildFile; fileRef = A6C259EC2137BBA200BF699D /* main.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +56,8 @@
 		A6C25992212FDE2400BF699D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6C2599E212FE37800BF699D /* fmWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fmWebViewController.h; sourceTree = "<group>"; };
 		A6C2599F212FE37800BF699D /* fmWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fmWebViewController.m; sourceTree = "<group>"; };
-		A6C259A121354C4200BF699D /* ExampleApp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ExampleApp.html; sourceTree = "<group>"; };
+		A6C259EA2137997400BF699D /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		A6C259EC2137BBA200BF699D /* main.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = main.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +108,8 @@
 		A6C2596B212FDE2300BF699D /* fmTestJavaScript */ = {
 			isa = PBXGroup;
 			children = (
-				A6C259A121354C4200BF699D /* ExampleApp.html */,
+				A6C259EC2137BBA200BF699D /* main.html */,
+				A6C259EA2137997400BF699D /* main.js */,
 				A6C2596C212FDE2300BF699D /* AppDelegate.h */,
 				A6C2596D212FDE2300BF699D /* AppDelegate.m */,
 				A6C2596F212FDE2300BF699D /* ViewController.h */,
@@ -245,8 +248,9 @@
 			files = (
 				A6C25979212FDE2400BF699D /* LaunchScreen.storyboard in Resources */,
 				A6C25976212FDE2400BF699D /* Assets.xcassets in Resources */,
+				A6C259EB2137997400BF699D /* main.js in Resources */,
+				A6C259ED2137BBA200BF699D /* main.html in Resources */,
 				A6C25974212FDE2300BF699D /* Main.storyboard in Resources */,
-				A6C259A221354C4200BF699D /* ExampleApp.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
