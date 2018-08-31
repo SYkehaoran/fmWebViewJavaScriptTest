@@ -15,9 +15,9 @@
 
 @implementation ViewController
 - (void)btnClick {
+
     fmWebViewController *webVC = [[fmWebViewController alloc] init];
-    [self.navigationController pushViewController:webVC animated:YES];
-    
+    [self.navigationController pushViewController:webVC animated:YES];    
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
