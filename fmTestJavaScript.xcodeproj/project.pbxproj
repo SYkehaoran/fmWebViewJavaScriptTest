@@ -19,6 +19,7 @@
 		A6C259EB2137997400BF699D /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = A6C259EA2137997400BF699D /* main.js */; };
 		A6C259ED2137BBA200BF699D /* main.html in Resources */ = {isa = PBXBuildFile; fileRef = A6C259EC2137BBA200BF699D /* main.html */; };
 		A6C259EF2137D72600BF699D /* 12121G23323-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6C259EE2137D72600BF699D /* 12121G23323-1.jpg */; };
+		AA38E2ED64BAD8CAC015ADFD /* libPods-fmTestJavaScript.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1F9FEAD19E033820A21340 /* libPods-fmTestJavaScript.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,9 @@
 		A6C259EA2137997400BF699D /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		A6C259EC2137BBA200BF699D /* main.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = main.html; sourceTree = "<group>"; };
 		A6C259EE2137D72600BF699D /* 12121G23323-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "12121G23323-1.jpg"; sourceTree = "<group>"; };
+		A8230EDD7D7736AEF017D7E7 /* Pods-fmTestJavaScript.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fmTestJavaScript.release.xcconfig"; path = "Pods/Target Support Files/Pods-fmTestJavaScript/Pods-fmTestJavaScript.release.xcconfig"; sourceTree = "<group>"; };
+		DC6500297CF7FAF0EB673574 /* Pods-fmTestJavaScript.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fmTestJavaScript.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fmTestJavaScript/Pods-fmTestJavaScript.debug.xcconfig"; sourceTree = "<group>"; };
+		DF1F9FEAD19E033820A21340 /* libPods-fmTestJavaScript.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-fmTestJavaScript.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA38E2ED64BAD8CAC015ADFD /* libPods-fmTestJavaScript.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53571AA8AA7F5F99457E7BE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF1F9FEAD19E033820A21340 /* libPods-fmTestJavaScript.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A6C25960212FDE2300BF699D = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +107,8 @@
 				A6C25984212FDE2400BF699D /* fmTestJavaScriptTests */,
 				A6C2598F212FDE2400BF699D /* fmTestJavaScriptUITests */,
 				A6C2596A212FDE2300BF699D /* Products */,
+				C6A003D901575DDD1990974D /* Pods */,
+				53571AA8AA7F5F99457E7BE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,6 +161,15 @@
 			path = fmTestJavaScriptUITests;
 			sourceTree = "<group>";
 		};
+		C6A003D901575DDD1990974D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC6500297CF7FAF0EB673574 /* Pods-fmTestJavaScript.debug.xcconfig */,
+				A8230EDD7D7736AEF017D7E7 /* Pods-fmTestJavaScript.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,9 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6C25995212FDE2400BF699D /* Build configuration list for PBXNativeTarget "fmTestJavaScript" */;
 			buildPhases = (
+				BB4F3D6BB8308E6B406425C2 /* [CP] Check Pods Manifest.lock */,
 				A6C25965212FDE2300BF699D /* Sources */,
 				A6C25966212FDE2300BF699D /* Frameworks */,
 				A6C25967212FDE2300BF699D /* Resources */,
+				02FFD40F9B7D7981B650D95B /* [CP] Embed Pods Frameworks */,
+				4A5FE019AD26B1F8021B39E0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -273,6 +300,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02FFD40F9B7D7981B650D95B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fmTestJavaScript/Pods-fmTestJavaScript-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A5FE019AD26B1F8021B39E0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fmTestJavaScript/Pods-fmTestJavaScript-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB4F3D6BB8308E6B406425C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fmTestJavaScript-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A6C25965212FDE2300BF699D /* Sources */ = {
@@ -449,15 +527,13 @@
 		};
 		A6C25996212FDE2400BF699D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC6500297CF7FAF0EB673574 /* Pods-fmTestJavaScript.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QYA6ERYV5S;
 				INFOPLIST_FILE = fmTestJavaScript/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kehaoran.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -466,15 +542,13 @@
 		};
 		A6C25997212FDE2400BF699D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8230EDD7D7736AEF017D7E7 /* Pods-fmTestJavaScript.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QYA6ERYV5S;
 				INFOPLIST_FILE = fmTestJavaScript/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kehaoran.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -488,11 +562,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QYA6ERYV5S;
 				INFOPLIST_FILE = fmTestJavaScriptTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.kehaoran.com.fmTestJavaScriptTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -507,11 +577,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QYA6ERYV5S;
 				INFOPLIST_FILE = fmTestJavaScriptTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.kehaoran.com.fmTestJavaScriptTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -525,11 +591,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QYA6ERYV5S;
 				INFOPLIST_FILE = fmTestJavaScriptUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.kehaoran.com.fmTestJavaScriptUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -543,11 +605,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QYA6ERYV5S;
 				INFOPLIST_FILE = fmTestJavaScriptUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.kehaoran.com.fmTestJavaScriptUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
